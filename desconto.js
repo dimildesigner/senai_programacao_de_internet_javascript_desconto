@@ -3,7 +3,11 @@
 // Crie um programa que calcule o valor final da compra de Fernanda,
 // aplicando o desconto se aplicável.
 
-let valorCompra = 120;
+console.log("........... Calculadora de Desconto ...........");
+
+const prompt = require(`prompt-sync`)()
+
+let valorCompra = parseFloat(prompt('Digite o valor da compra: '))
 let valorFinal;
 
 if (valorCompra > 100) {
@@ -11,5 +15,5 @@ if (valorCompra > 100) {
   console.log(`Você recebeu um desconto. O valor final é R$${valorFinal}.`);
 
 } else {
-  console.log(`O valor da compra é R$${valorCompra}.`);
+  console.log(`Não houve desconto. O valor da compra é R$${valorCompra}.`);
 }
